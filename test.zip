@@ -1,0 +1,150 @@
+<html><head><title>web.Server Traceback (most recent call last)</title></head><body><b>web.Server Traceback (most recent call last):</b>
+
+<div>
+  <style type="text/css">
+    div.error {
+      color: red;
+      font-family: Verdana, Arial, helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    div {
+      font-family: Verdana, Arial, helvetica, sans-serif;
+    }
+
+    div.stackTrace {
+    }
+
+    div.frame {
+      padding: 1em;
+      background: white;
+      border-bottom: thin black dashed;
+    }
+
+    div.frame:first-child {
+      padding: 1em;
+      background: white;
+      border-top: thin black dashed;
+      border-bottom: thin black dashed;
+    }
+
+    div.location {
+    }
+
+    span.function {
+      font-weight: bold;
+      font-family: "Courier New", courier, monospace;
+    }
+
+    div.snippet {
+      margin-bottom: 0.5em;
+      margin-left: 1em;
+      background: #FFFFDD;
+    }
+
+    div.snippetHighlightLine {
+      color: red;
+    }
+
+    span.code {
+      font-family: "Courier New", courier, monospace;
+    }
+  </style>
+
+  <div class="error">
+    <span>builtins.FileNotFoundError</span>: <span>[Errno 2] No such file or directory: 'train_model.zip'</span>
+  </div>
+  <div class="stackTrace">
+    <div class="frame">
+      <div class="location">
+        <span>D:\code_software\python\lib\site-packages\twisted\internet\defer.py</span>:<span>191</span> in
+        <span class="function">maybeDeferred</span>
+      </div>
+      <div class="snippet">
+        <div class="snippetLine">
+          <span class="lineno">190</span>
+          <code class="code"> &#160; &#160;try:</code>
+        </div><div class="snippetHighlightLine">
+          <span class="lineno">191</span>
+          <code class="code"> &#160; &#160; &#160; &#160;result = f(*args, **kwargs)</code>
+        </div><div class="snippetLine">
+          <span class="lineno">192</span>
+          <code class="code"> &#160; &#160;except BaseException:</code>
+        </div>
+      </div>
+    </div><div class="frame">
+      <div class="location">
+        <span>D:\code_software\python\lib\site-packages\klein\_app.py</span>:<span>230</span> in
+        <span class="function">execute_endpoint</span>
+      </div>
+      <div class="snippet">
+        <div class="snippetLine">
+          <span class="lineno">229</span>
+          <code class="code"> &#160; &#160; &#160; &#160;# going to pass them along here anyway.</code>
+        </div><div class="snippetHighlightLine">
+          <span class="lineno">230</span>
+          <code class="code"> &#160; &#160; &#160; &#160;return endpoint_f(</code>
+        </div><div class="snippetLine">
+          <span class="lineno">231</span>
+          <code class="code"> &#160; &#160; &#160; &#160; &#160; &#160;self._instance, request, *args, **kwargs &#160;# type: ignore[arg-type]</code>
+        </div>
+      </div>
+    </div><div class="frame">
+      <div class="location">
+        <span>D:\code_software\python\lib\site-packages\klein\_app.py</span>:<span>366</span> in
+        <span class="function">_f</span>
+      </div>
+      <div class="snippet">
+        <div class="snippetLine">
+          <span class="lineno">365</span>
+          <code class="code"> &#160; &#160; &#160; &#160; &#160; &#160;) -&gt; KleinRenderable:</code>
+        </div><div class="snippetHighlightLine">
+          <span class="lineno">366</span>
+          <code class="code"> &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;return _call(instance, f, request, *a, **kw)</code>
+        </div><div class="snippetLine">
+          <span class="lineno">367</span>
+          <code class="code"></code>
+        </div>
+      </div>
+    </div><div class="frame">
+      <div class="location">
+        <span>D:\code_software\python\lib\site-packages\klein\_app.py</span>:<span>124</span> in
+        <span class="function">_call</span>
+      </div>
+      <div class="snippet">
+        <div class="snippetLine">
+          <span class="lineno">123</span>
+          <code class="code"> &#160; &#160; &#160; &#160;args = (__klein_instance__,) + args</code>
+        </div><div class="snippetHighlightLine">
+          <span class="lineno">124</span>
+          <code class="code"> &#160; &#160;result = __klein_f__(*args, **kwargs)</code>
+        </div><div class="snippetLine">
+          <span class="lineno">125</span>
+          <code class="code"> &#160; &#160;if iscoroutine(result):</code>
+        </div>
+      </div>
+    </div><div class="frame">
+      <div class="location">
+        <span>.\test.py</span>:<span>13</span> in
+        <span class="function">pg_index</span>
+      </div>
+      <div class="snippet">
+        <div class="snippetLine">
+          <span class="lineno">12</span>
+          <code class="code"> &#160; &#160;file_name = "train_model.zip"</code>
+        </div><div class="snippetHighlightLine">
+          <span class="lineno">13</span>
+          <code class="code"> &#160; &#160;with open(file_name, 'rb') as file:</code>
+        </div><div class="snippetLine">
+          <span class="lineno">14</span>
+          <code class="code"></code>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="error">
+    <span>builtins.FileNotFoundError</span>: <span>[Errno 2] No such file or directory: 'train_model.zip'</span>
+  </div>
+</div>
+
+</body></html>
